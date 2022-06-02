@@ -1,0 +1,13 @@
+<p>ball works!</p>
+
+<div *ngIf="isShow">
+    Text Showing here
+    <select >
+        <option *ngFor="let ball of balls" name="bl">
+            {{ball}}
+        </option>
+    </select>
+    <p *ngFor="let ball of balls">{{ball}}</p>
+</div>
+
+<button type="button" (click)="isShow = !isShow">Click Me</button>

@@ -1,0 +1,512 @@
+body {
+    padding: 2px;
+    margin: 3px;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: black;
+
+
+}
+
+#logo {
+    margin: 10px 34px;
+
+
+
+
+}
+
+#logo img {
+    height: 56px;
+    margin: 3px 5px;
+
+
+
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: blocks;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: red;
+    background-color: white;
+
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+
+    border: 4px solid aqua;
+    padding: 34px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color: white;
+    text-align: center;
+}
+
+#services .box img {
+    height: 120px;
+    margin: auto;
+    display: block;
+
+
+}
+
+#services .h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    background-color: red;
+
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 0px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: left;
+
+}
+
+#clients {
+    display: flex;
+
+    align-items: center;
+}
+
+#client-section {
+    height: 344px;
+}
+
+#clients img {
+    height: 144px;
+
+}
+
+.h-third {
+    font-size: 1.9 rem;
+    padding: -10px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+h3 {
+    background-color: yellow;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.4rem;
+    margin: 4px;
+    padding: -5px;
+
+
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+div {
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+}
+
+h4 {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 6px;
+    font-size: 2.4rem;
+
+}
+
+#users {
+    display: flex;
+    align-items: center;
+}
+
+#next-section {
+    height: 344px;
+}
+
+#users img {
+    height: 144px;
+
+}
+
+.h-fourth {
+    font-size: 1.9 rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+h5 {
+    background-color: yellow;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 4px;
+    font-size: 2.4rem;
+}
+
+h6 {
+    background-color: aqua;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 4px;
+    font-size: 2.4rem;
+
+}
+
+main {
+    background-color: white;
+    color: black;
+    margin: 2px;
+    padding: 3px;
+}
+
+.client-item {
+    padding: 0px;
+}
+
+#section-section::before {
+    content: "";
+    position: absolute;
+    background-image: url("img.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4px;
+
+
+}
+
+/*footer*/
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+drag {
+    width: 880px;
+    height: 67px;
+    background: rgb(162, 0, 255);
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 10s infinite;
+
+}
+
+#div1 {
+    animation-timing-function: Online shopping cart;
+
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 700px;
+    }
+}
+
+/*chatbox styling*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+h9{
+    background-color: blue;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    left: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    left: 0;
+    bottom: 8px;
+    z-index: 99;
+    background:black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
