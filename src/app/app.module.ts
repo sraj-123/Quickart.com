@@ -18,6 +18,7 @@ import { UserComponent } from './admin/user/user.component';
 import { UserValuesComponent } from './admin/user-values/user-values.component';
 import { UsergroupsComponent } from './admin/user-groups/usergroups.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
