@@ -10,7 +10,7 @@ export class ApiService {
 
   getRecords()
   {
-    return this.http.get("");
+    return this.http.get("https://gorest.co.in/public/v2/users");
   }
 
 }

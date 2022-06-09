@@ -14,6 +14,7 @@
         body {
             padding: 2px;
             margin: 3px;
+            background-color:rgba(0, 0, 0, 0.2);
         }
 
         * {
@@ -357,7 +358,7 @@
             margin-bottom: 0;
         }
 
-        sub {
+        main {
             width: 880px;
             height: 67px;
             background: rgb(162, 0, 255);
@@ -464,72 +465,247 @@
         .open-button:hover {
             opacity: 1;
         }
-
-        h6 {
+        h9{
             background-color: blue;
             color: white;
         }
+        /*menu*/
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    .menuItem {
+        display: block;
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menuItem:hover {
+        text-decoration: underline;
+    }
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        left: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: white;
+        color: black;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        left: 0;
+        bottom: 8px;
+        z-index: 99;
+        background:black;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+    /*gallery*/
+    /*
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header {
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0px;
+}
+.logo{
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+.logo span{
+    color: #e74c3c;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+.menu a:first-child{
+    color: #e74c3c;
+}
+.menu a:hover{
+    color: #e74c3c;
+}
+.icon i{
+    font-size: 20px;
+
+}
+.icon i:hover{
+    color: #e74c3c;
+}
+.icon a{
+    text-decoration: none;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+}
+.h-text{
+    color: white;
+    min-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+#camera{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+
+}
+.h-text input{
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-style: 20px;
+    border-radius: 8px;
+}
+.h-text button{
+    width: 30%;
+    padding: 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 30px;
+
+}*/
+.filter-gallery{
+    padding: 100px;
+}
+.portfolio-menu {
+
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
 
 
-        .menuItem {
-            display: block;
-            margin: 2rem 4rem;
-            font-size: 1.8rem;
-            color: white;
-            text-decoration: none;
-        }
 
-        .menuItem:hover {
-            text-decoration: underline;
-        }
 
-        .hamburger {
-            position: fixed;
-            z-index: 100;
-            top: 1rem;
-            left: 1rem;
-            padding: 4px;
-            border: black solid 1px;
-            background: white;
-            color: black;
-            cursor: pointer;
-            border-radius: 4px;
-        }
+}
+.portfolio-menu ul li:hover{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
 
-        .closeIcon {
-            display: none;
-        }
+}
+li.active{
+    color: white;
+    background: #e74c3c;
+    border-radius: 8px;
 
-        .menu {
-            position: fixed;
-            transform: translateY(-100%);
-            transition: transform 0.2s;
-            top: 0;
-            left: 0;
-            left: 0;
-            bottom: 8px;
-            z-index: 99;
-            background: black;
-            color: white;
-            list-style: none;
-            padding-top: 4rem;
-        }
+}
+.portfolio-item{
+    width: 100%;
 
-        .showMenu {
-            transform: translateY(0);
-        }
+
+}
+.portfolio-item .item{
+    width: 360px;
+    height:360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.portfolio-item .item img{
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+
+}
+.member{
+    width: 100%;
+    padding: 20px 100px;
+    font-family: sans-serif;
+
+}
+.member-info{
+    text-align: center;
+
+}
+.member-info h1{
+    font-size: 2.5em;
+}
+.member-info h1 span{
+    color: #e74c3c;
+}
+    /*end gallary*/
     </style>
 
 </head>
 
 <body>
-
+   
 
     <nav id="navbar">
         <div id="logo">
@@ -542,7 +718,7 @@
             <li class="item"><a href="#">About us</a></li>
             <li class="item"><a href="#">Contact us</a></li>
             <li class="item"><a href="#">Register</a></li>
-            <li class="item"><a href="#">Login </a></li>
+            <li class="item"><a href="http://127.0.0.1:5500/sample/src/app/login/login.html">Login </a></li>
             <input type="text" placeholder="Search..." name="Search">
             <button type="Search" onclick="search">Search</button>
 
@@ -551,78 +727,73 @@
 
 
     </nav>
-    <sub id="div1"> "QUICKART" is india's biggest e-commerce site </sub>
+    
+    <main id="div1"> "QUICKART" is india's biggest e-commerce site </main><!--error-->
     <section id="home">
-        <!--menu-->
-        <ul class="menu">
-            <li><a class="menuItem" href="#">PROFILE</a></li>
-            <li><a class="menuItem" href="#">SUPERCOIN ZONE</a></li>
-            <li><a class="menuItem" href="#">ALL CATEGORIES</a></li>
-            <li><a class="menuItem" href="#">CHOOSE AN LANGUAGE</a></li>
-            <li><a class="menuItem" href="#">MY CART</a></li>
-            <li><a class="menuItem" href="#">MY WISH LIST</a></li>
-            <li><a class="menuItem" href="#">ORDER</a></li>
-            <li><a class="menuItem" href="#">REWARDS</a></li>
-            <li><a class="menuItem" href="#">TRACK YOUR ORDER</a></li>
-        </ul>
-        <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i class="menuIcon material-icons">menu</i>
-            <i class="closeIcon material-icons">close</i>
-        </button>
-        <main>
+         <!-- menu bar    -->
+    <ul class="menu">
+        <li><a class="menuItem" href="#">PROFILE</a></li>
+        <li><a class="menuItem" href="#">SUPERCOIN ZONE</a></li>
+        <li><a class="menuItem" href="#">ALL CATEGORIES</a></li>
+        <li><a class="menuItem" href="#">CHOOSE AN LANGUAGE</a></li>
+        <li><a class="menuItem" href="#">MY CART</a></li>
+        <li><a class="menuItem" href="#">MY WISH LIST</a></li>
+        <li><a class="menuItem" href="#">ORDER</a></li>
+        <li><a class="menuItem" href="#">REWARDS</a></li>
+        <li><a class="menuItem" href="#">TRACK YOUR ORDER</a></li>
+    </ul>
+    <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
+<!--menu-->
+       <!-- <main>
             <input type="text" placeholder="search.."><button type="button" onclick="Search">Search</button>
-        </main>
+        </main>-->
         <h1 class="h-primary">WELCOME TO QUICKART</h1>
         <p>Quick and Safe Delivery</p>
 
 
-        <!--<button class="btn" onclick="myZone()">BUY FROM QUICKART</button>-->
-        <!-- login page-->
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login And
-            Register</button>
+       <!--<button class="btn" onclick="myZone()">BUY FROM QUICKART</button>-->
+       <!-- login page-->
+       <!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login And Register</button>-->
 
-        <div id="id01" class="modal">
-
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                        title="Close Modal"></span>
-                    <!-- register-->
-                    <div class="container">
-                        <label for="uname"><b>e-mail</b></label>
-                        <input type="text" placeholder="e-mail" name="uname" required>
-                        <br><label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <br><button type="button" onclick="document.getElementById('id01').style.display='none'"
-                            class="cancelbtn">Register</button>
-                        <img src="img_avatar2.png" alt="" class="">
-                    </div>
-
-                    <div class="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-
-                        <br><label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-
-                        <br> <button type="submit">Login</button>
-                        <label>
-                            <br><input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                    </div>
-
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                            class="cancelbtn">Cancel</button>
-                        <br> <span class="psw">Forgot <a href="#">password?</a></span>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <!--end of login page-->
+       <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+            <!-- register-->
+           <!-- <div class="container">
+                <label for="uname"><b>E-mail  Id  </b></label>
+                <input type="text" placeholder="e-mail" name="uname" required>
+                <br><label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Register</button>
+            <img src="img_avatar2.png" alt="" class="">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <br><label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            
+              
+           <br> <button type="submit">Login</button>
+            <label>
+            <br><input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+           <br> <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>-->
+      </div><!--end of login page-->
         <p id="same"></p>
     </section>
     <!--chatbox
@@ -720,8 +891,54 @@
 
         </div>
     </section>
-   
-         
+    <!--galler-->
+    <section class="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".Groceries">Groceries</li>
+                <li data-filter=".Electronic">Electronic</li>
+                <li data-filter=".wedding clothes">wedding clothes</li>
+            </ul>
+        </div>
+        <div class="portfolio-item">
+            <div class="item Groceries">
+                <img src="https://rukminim2.flixcart.com/image/192/192/kwb07m80/nut-dry-fruit/p/9/e/500-california-pouch-2-prov-original-imag9y9drcceuxme.jpeg?q=70" width="100" height="100">
+            </div>
+                <div class="item Electronic">
+                    <img src="https://rukminim2.flixcart.com/image/400/400/kjrh2fk0/data-cable/lightning-cable/c/0/0/por-1080-konnect-l-portronics-original-imafz9hxcdc6vceu.jpeg?q=70" width="100" height="100">
+                </div>
+                    <div class="item wedding clothes">
+                        <img src="https://rukminim2.flixcart.com/image/533/640/kf75fgw0/ethnic-set/y/w/3/44-kpw-b-ben-original-imafvzz7yfuswn2w.jpeg?q=50" width="100" height="100">
+                    </div>
+                    <div class="item Groceries">
+                        <img src="https://rukminim2.flixcart.com/image/192/192/kuof5ow0/salt/b/w/a/na-iodized-salt-tata-original-imag7qyapwcyntsj.jpeg?q=70" width="100" height="100">
+                    </div>
+                        <div class="item Electronic">
+                            <img src="https://rukminim2.flixcart.com/image/400/400/km0x5zk0/mobile-phone-lens/j/2/z/shpr4ulenskt-shoppers4u-original-imagfyszv5kyuhj7.jpeg?q=70" width="100" height="100">
+                        </div>
+                            <div class="item wedding clothes">
+                                <img src="https://rukminim2.flixcart.com/image/533/640/kqttg280/ethnic-set/z/f/v/40-ks-b-ben-original-imag4r2hzjyw3jdk.jpeg?q=50" width="100" height="100">
+                            </div>
+                            <div class="item Groceries">
+                                <img src="https://rukminim2.flixcart.com/image/192/192/kpr8k280/ghee/g/n/o/pure-cow-pouch-nandini-original-imag3x2ugjty2hyz.jpeg?q=70" width="100" height="100">
+                            </div>
+                                <div class="item Electronic">
+                                    <img src="https://rukminim2.flixcart.com/image/400/400/ku2zjww0/cases-covers/back-cover/t/6/i/opp-a53-rng-blk-01-kwine-case-original-imag7aychxr4dfxv.jpeg?q=70" width="100" height="100">
+                                </div>
+                                    <div class="item wedding clothes">
+                                        <img src="https://rukminim2.flixcart.com/image/533/640/kqzj7gw0/ethnic-set/a/b/2/44-vks-b-ben-original-imag4vp69fgvjxty.jpeg?q=50" width="100" height="100">
+                                    </div>
+                                    <div class="item Groceries">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/l0lbrm80/shopsy-festive-gift-box/6/f/5/7-dairy-milk-chocolates-with-gift-hamper-with-beautiful-original-imagccm25chztrx7.jpeg?q=70" width="100" height="100">
+                                    </div>
+                                        <div class="item Electronic">
+                                            <img src="https://rukminim2.flixcart.com/image/612/612/kve530w0/electric-cooker/f/i/u/2-layers-1-5ltr-multi-function-electric-cooker-rice-cooker-non-original-imag8az87fjgzyjc.jpeg?q=70" width="100" height="100">
+                                        </div>
+                                            <div class="item wedding clothes">
+                                                <img src="https://rukminim2.flixcart.com/image/533/640/k4a7c7k0/ethnic-set/n/k/d/3xl-vasmk062conplbcrnew-vastramay-original-imafkhs7qgazfvqy.jpeg?q=50" width="100" height="100">
+                                            </div>
+    </section>
     <!--end gallery-->
     <table>
         <section id="client-section">
@@ -733,8 +950,8 @@
             <div id="clients">
 
                 <div class="client-item">
-
-
+                    
+                    
                     <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtLPOzsJj-pfqoDDAs3vuQ_qFiO7nT8OREo-nlWIgdp9Vz8hOtcG5Mj6EIOYUeYaPBUYfATQQ&usqp=CAE"
                         alt="our client i-phone 13">
                     <h2 class="h-third center">i-PHONE <br>13</h2><label for="i-Phone"></label>
@@ -815,7 +1032,7 @@
 
 
 
-            </div>
+
         </section>
     </table>
     <section id="client-section">
@@ -1012,145 +1229,166 @@
                 </div>
             </div>
         </section>
+      <!--gallery-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+      $('.portfolio-menu ul li').click(function(){
+      $('.portfolio-menu ul li').removeClass('active');
+      $(this).addClass('active');  
+
+         var selector = $(this).attr('data-filter');
+         $('.portfolio-item').isotope({
+             filter:selector
+         });
+         return false;
+      });
+    </script>
+    <!--end gallery-->>
 
 
 
         <script>
-            /* let dataToggle = true;
-             function changeData() {
- 
-                 if (dataToggle) {
-                     document.getElementById("demo").innerHTML = "Ram-6Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm";
- 
-                     dataToggle = false;
-                 }
-                 else {
-                     document.getElementById("demo").innerHTML = "";
-                     dataToggle = true;
-                 }
-             }
-             let fine = true;
-             function myDell() {
-                 if (fine) {
-                     document.getElementById("dance").innerHTML = "Ram-4Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm";
-                     fine = false;
-                 }
-                 else {
-                     document.getElementById("dance").innerHTML = "";
-                     fineGoogle = true;
-                 }
-             }
-             let joy = true;
-             function myJoom() {
-                 if (joy) {
-                     document.getElementById("some").innerHTML = "Ram-4Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm"
-                     joy = false;
-                 }
-                 else {
-                     document.getElementById("some").innerHTML = "";
-                     joy = true;
-                 }
-             }
-             let sup = true;
-             function myBest() {
-                 if (sup) {
-                     document.getElementById("jolo").innerHTML = "Ram-6Gb,Rom-256Gb,Colours-(White),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm"
-                     sup = false;
-                 }
-                 else {
-                     document.getElementById("jolo").innerHTML = "";
-                     joy = true;
-                 }
- 
-             }
-             let tree = true;
- 
-             function myZone() {
-                 if (tree) {
-                     document.getElementById("same").innerHTML = "Get a better understanding of how e-shoppers are interacting with your products across the consumer funnel and get recommendations to improve brand awareness and consideration.";
-                     tree = false;
-                 }
-                 else {
-                     document.getElementById("same").innerHTML = "";
-                     tree = true;
-                 }
-             }
-             function openForm() {
-                 document.getElementById("myForm").style.display = "block";
-             }
- 
-             function closeForm() {
-                 document.getElementById("myForm").style.display = "none";
-             }*/
+           /* let dataToggle = true;
             function changeData() {
-                location.replace("iphoneDesc.html")
+
+                if (dataToggle) {
+                    document.getElementById("demo").innerHTML = "Ram-6Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm";
+
+                    dataToggle = false;
+                }
+                else {
+                    document.getElementById("demo").innerHTML = "";
+                    dataToggle = true;
+                }
             }
+            let fine = true;
             function myDell() {
-                location.replace("https://www.flipkart.com/search?q=I%20phone%20mini&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+                if (fine) {
+                    document.getElementById("dance").innerHTML = "Ram-4Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm";
+                    fine = false;
+                }
+                else {
+                    document.getElementById("dance").innerHTML = "";
+                    fineGoogle = true;
+                }
             }
+            let joy = true;
             function myJoom() {
-                location.replace("https://www.flipkart.com/apple-iphone-se-red-128-gb/p/itma4202509da171?pid=MOBFWQ6BJTVFKPEJ&lid=LSTMOBFWQ6BJTVFKPEJI0X38M&marketplace=FLIPKART&q=I+phone+se&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=151dacfa-8442-4035-b2f7-a4cb61db5d5d.MOBFWQ6BJTVFKPEJ.SEARCH&ppt=sp&ppn=sp&ssid=8120c5i1clwesmps1653564900389&qH=554d0a635e37574e")
+                if (joy) {
+                    document.getElementById("some").innerHTML = "Ram-4Gb,Rom-128Gb,Colours-(White,Red,Blue),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm"
+                    joy = false;
+                }
+                else {
+                    document.getElementById("some").innerHTML = "";
+                    joy = true;
+                }
             }
-            function myBell() {
-                location.replace("https://www.flipkart.com/apple-iphone-13-pro-max-graphite-512-gb/p/itmbe5170f10a29f?pid=MOBG6VF5MNKYGQMA&lid=LSTMOBG6VF5MNKYGQMA3Q2IN7&marketplace=FLIPKART&q=apple+i+phone+13pro+max&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_4_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_4_8_na_na_na&fm=Search&iid=5c5c3ec3-7620-45f0-a304-cd56b8c16320.MOBG6VF5MNKYGQMA.SEARCH&ppt=pp&ppn=pp&ssid=iu7hiixf21fxs7401653564958292&qH=8d12941b9a0a141a")
-            }
+            let sup = true;
             function myBest() {
-                location.replace("https://www.flipkart.com/apple-iphone-12-mini-blue-64-gb/p/itm2883104474448?pid=MOBFWBYZC6UYGR2R&lid=LSTMOBFWBYZC6UYGR2RCZ0OCM&marketplace=FLIPKART&q=i+phone+mini12&store=tyy%2F4io&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&fm=Search&iid=78b3785c-e539-4e6c-ae35-105084de1077.MOBFWBYZC6UYGR2R.SEARCH&ppt=sp&ppn=sp&ssid=td8y1rkroclt4zy81653565017412&qH=8acba691f830da0f")
+                if (sup) {
+                    document.getElementById("jolo").innerHTML = "Ram-6Gb,Rom-256Gb,Colours-(White),Dual Sim support,Weight-200Gm,Bluetooth-5.5,Headphone jack-3.3mm"
+                    sup = false;
+                }
+                else {
+                    document.getElementById("jolo").innerHTML = "";
+                    joy = true;
+                }
+
             }
+            let tree = true;
+
             function myZone() {
-                location.replace("https://www.flipkart.com/redmi-note-9-scarlet-red-64-gb/p/itm70628269ecd57?pid=MOBFUJE7WGKY7AER&lid=LSTMOBFUJE7WGKY7AERNF2JLF&marketplace=FLIPKART&q=red+note+10&store=tyy%2F4io&srno=s_1_3&otracker=search&fm=organic&iid=aa9bd537-72d5-430a-bde1-5619e35201c7.MOBFUJE7WGKY7AER.SEARCH&ppt=None&ppn=None&ssid=cdub24xcu7vfnk001653565342380&qH=ba0250efd46e8b2b")
+                if (tree) {
+                    document.getElementById("same").innerHTML = "Get a better understanding of how e-shoppers are interacting with your products across the consumer funnel and get recommendations to improve brand awareness and consideration.";
+                    tree = false;
+                }
+                else {
+                    document.getElementById("same").innerHTML = "";
+                    tree = true;
+                }
             }
             function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }*/
+            function changeData(){
+                location.replace("iphoneDesc.html")
+            }
+            function myDell (){
+                location.replace("https://www.flipkart.com/search?q=I%20phone%20mini&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off")
+            }
+            function myJoom (){
+                location.replace("https://www.flipkart.com/apple-iphone-se-red-128-gb/p/itma4202509da171?pid=MOBFWQ6BJTVFKPEJ&lid=LSTMOBFWQ6BJTVFKPEJI0X38M&marketplace=FLIPKART&q=I+phone+se&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=151dacfa-8442-4035-b2f7-a4cb61db5d5d.MOBFWQ6BJTVFKPEJ.SEARCH&ppt=sp&ppn=sp&ssid=8120c5i1clwesmps1653564900389&qH=554d0a635e37574e")
+            }
+            function myBell (){
+                location.replace("https://www.flipkart.com/apple-iphone-13-pro-max-graphite-512-gb/p/itmbe5170f10a29f?pid=MOBG6VF5MNKYGQMA&lid=LSTMOBG6VF5MNKYGQMA3Q2IN7&marketplace=FLIPKART&q=apple+i+phone+13pro+max&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_4_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_4_8_na_na_na&fm=Search&iid=5c5c3ec3-7620-45f0-a304-cd56b8c16320.MOBG6VF5MNKYGQMA.SEARCH&ppt=pp&ppn=pp&ssid=iu7hiixf21fxs7401653564958292&qH=8d12941b9a0a141a")
+            }
+            function myBest (){
+                location.replace("https://www.flipkart.com/apple-iphone-12-mini-blue-64-gb/p/itm2883104474448?pid=MOBFWBYZC6UYGR2R&lid=LSTMOBFWBYZC6UYGR2RCZ0OCM&marketplace=FLIPKART&q=i+phone+mini12&store=tyy%2F4io&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_ps&fm=Search&iid=78b3785c-e539-4e6c-ae35-105084de1077.MOBFWBYZC6UYGR2R.SEARCH&ppt=sp&ppn=sp&ssid=td8y1rkroclt4zy81653565017412&qH=8acba691f830da0f")
+            }
+            function myZone (){
+                location.replace("https://www.flipkart.com/redmi-note-9-scarlet-red-64-gb/p/itm70628269ecd57?pid=MOBFUJE7WGKY7AER&lid=LSTMOBFUJE7WGKY7AERNF2JLF&marketplace=FLIPKART&q=red+note+10&store=tyy%2F4io&srno=s_1_3&otracker=search&fm=organic&iid=aa9bd537-72d5-430a-bde1-5619e35201c7.MOBFUJE7WGKY7AER.SEARCH&ppt=None&ppn=None&ssid=cdub24xcu7vfnk001653565342380&qH=ba0250efd46e8b2b")
+            }
+            function openForm (){
                 location.replace("https://www.flipkart.com/realme-9-pro-5g-aurora-green-128-gb/p/itmce357e4a0ca24?pid=MOBGB4ZYUBUYWPT4&lid=LSTMOBGB4ZYUBUYWPT4XLPNUS&marketplace=FLIPKART&q=real+me+9+pro&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=77c667f1-797d-45bd-9bfc-31b16262494e.MOBGB4ZYUBUYWPT4.SEARCH&ppt=pp&ppn=pp&ssid=fmsfn9xyfiqwhc741653565391446&qH=a68170f7770f8f98")
             }
-            function myDog() {
+            function myDog (){
                 location.replace("https://www.flipkart.com/oppo-k3-jade-black-64-gb/p/itme8a4ae911c569?pid=MOBFKHAWVGS3RT38&lid=LSTMOBFKHAWVGS3RT38QVOSWH&marketplace=FLIPKART&q=opposition+k3&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=4732d094-2f55-4441-a7bd-c0cf29a06c93.MOBFKHAWVGS3RT38.SEARCH&ppt=pp&ppn=pp&ssid=offvtizknqrte6801653565455589&qH=67abcf2271e79902")
             }
-            function myCat() {
+            function myCat (){
                 location.replace("https://www.flipkart.com/samsung-galaxy-s20-ultra-cosmic-gray-128-gb/p/itma25b4687846b4?pid=MOBFZXZ22CWZ2JZB&lid=LSTMOBFZXZ22CWZ2JZB7GKWML&marketplace=FLIPKART&q=samsung+galaxy+s22+ultra&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_15_na_na_ps&fm=search-autosuggest&iid=59091fce-4ce5-49db-99cd-acea1c78b2c4.MOBFZXZ22CWZ2JZB.SEARCH&ppt=browse&ppn=browse&ssid=y3wsjtqhdec4t1c01653565515652&qH=3e4f2d5fba6a6cb9")
             }
-            function myDell() {
+            function myDell (){
                 location.replace("https://www.flipkart.com/oneplus-nord-ce-2-lite-5g-blue-tide-128-gb/p/itm7acae55b999e6?pid=MOBGDWFJFBKYTEGP&lid=LSTMOBGDWFJFBKYTEGPYJVD6Z&marketplace=FLIPKART&q=one+plus+nord&store=tyy%2F4io&srno=s_1_1&otracker=AS_Query_OrganicAutoSuggest_7_5_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_7_5_na_na_ps&fm=search-autosuggest&iid=d71679c5-58fe-4c9e-adbb-e668ce6b6516.MOBGDWFJFBKYTEGP.SEARCH&ppt=pp&ppn=pp&ssid=ki9pwechtkvcwfsw1653565566370&qH=0ec0ef802ef44f75")
             }
-
-            function myMac() {
+            
+            function myMac(){
                 location.replace("https://www.flipkart.com/apple-2020-macbook-air-m1-8-gb-512-gb-ssd-mac-os-big-sur-mgna3hn-a/p/itm8279ecf48f54f?pid=COMFXEKMADKVCFYT&lid=LSTCOMFXEKMADKVCFYTMC7FBI&marketplace=FLIPKART&q=macbook+air&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&fm=search-autosuggest&iid=2f828976-4152-4be4-aa42-413f10a7bad5.COMFXEKMADKVCFYT.SEARCH&ppt=pp&ppn=pp&ssid=lbfepqb612x7l6o01653565687195&qH=b61d62051d5441f9")
             }
-            function myTell() {
+            function myTell (){
                 location.replace("https://www.flipkart.com/apple-macbook-air-core-i3-10th-gen-8-gb-256-gb-ssd-mac-os-catalina-mwtj2hn-a/p/itm7955c0249a9b5?pid=COMFQXEGSN6JPPTE&lid=LSTCOMFQXEGSN6JPPTE77VFFX&marketplace=FLIPKART&q=macbook+intel&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_ps&fm=search-autosuggest&iid=3aa10a87-8d67-49fd-b9e8-33b122fe2910.COMFQXEGSN6JPPTE.SEARCH&ppt=pp&ppn=pp&ssid=wv13ajk2fbwy9ds01653565754298&qH=46e608957ea24352")
             }
-            function myJok() {
+            function myJok(){
                 location.replace("https://www.flipkart.com/hp-15s-ryzen-3-dual-core-3250u-8-gb-1-tb-hdd-256-gb-ssd-windows-10-home-15s-gr0012au-laptop/p/itm9e1f8deeed35f?pid=COMFZHFWBE7APPH2&lid=LSTCOMFZHFWBE7APPH2PLTTEQ&marketplace=FLIPKART&q=hp+15s&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=92230b40-487f-4b57-9508-ac9bfa839f67.COMFZHFWBE7APPH2.SEARCH&ppt=pp&ppn=pp&ssid=iq2ksrmqn2oqk83k1653565883116&qH=ded59ebe32cdc5f7")
             }
-            function myJol() {
+            function myJol(){
                 location.replace("https://www.flipkart.com/lenovo-legion-5-core-i5-10th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-120-hz-15imh05-gaming-laptop/p/itmdbb1713f3cca4?pid=COMG4BHEFBUFVMHV&lid=LSTCOMG4BHEFBUFVMHVAKJAWI&marketplace=FLIPKART&q=Lenovo+legion+15+i&store=search.flipkart.com&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=ca3be24e-0a7e-43bb-b5de-d8993888d97c.COMG4BHEFBUFVMHV.SEARCH&ppt=sp&ppn=sp&ssid=tabi9kbsmsxj3qio1653565979213&qH=96d03eccd101eae3")
             }
-            function myJos() {
+            function myJos(){
                 location.replace("https://www.flipkart.com/asus-vivobook-ultra-14-2022-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-x413ea-eb532ws-thin-light-laptop/p/itmf6445e8ebf133?pid=COMG87FFYEZW7ZRC&lid=LSTCOMG87FFYEZW7ZRCPD6GGV&marketplace=FLIPKART&q=asus+vivobook+14&store=6bo%2Fb5g&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_sc_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_sc_na_ps&fm=Search&iid=72803cc8-33ed-4580-9a97-84acb2cb755a.COMG87FFYEZW7ZRC.SEARCH&ppt=pp&ppn=pp&ssid=j5x8bhfvlpioeu4g1653566029338&qH=08587eeb7c32fc3d")
             }
-
-            function myJon() {
+            
+            function myJon(){
                 location.replace("https://www.flipkart.com/hp-ryzen-5-hexa-core-5500u-8-gb-512-gb-ssd-windows-11-home-14s-fq1092au-thin-light-laptop/p/itm808dc28eb54e7?pid=COMGAX8EYBZZDXY6&lid=LSTCOMGAX8EYBZZDXY6KGWIPZ&marketplace=FLIPKART&q=hp+14s&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6fa65f1f-f868-48e1-8fec-c11699e151ac.COMGAX8EYBZZDXY6.SEARCH&ppt=pp&ppn=pp&ssid=a4t3lwsu8j0ko7i81653566075505&qH=c9986176accfff15")
             }
-            function myLoc() {
+            function myLoc(){
                 location.replace("https://www.flipkart.com/cw-bouncer-cricket-kit-set-accessories-ideal-14-up-yrs-full-size/p/itmcbcc60b509d90?pid=KITFWPGGYXGHAKPA&lid=LSTKITFWPGGYXGHAKPAPF5PG7&marketplace=FLIPKART&q=cricket+kit+bag+full+set&store=abc%2F5lf%2Fra8&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_11_na_na_ps&fm=search-autosuggest&iid=ca5b28fb-2c49-4b8b-b4ee-1dd06a579a7b.KITFWPGGYXGHAKPA.SEARCH&ppt=sp&ppn=sp&ssid=53tz58bmygrnghkw1653566192639&qH=97f3a8549becd881")
             }
-            function myFoo() {
+            function myFoo(){
                 location.replace("https://www.flipkart.com/sports-trading-laliga-football-kit/p/itmf9d71ce01116a?pid=KITFZTY9ZTC2HETW&lid=LSTKITFZTY9ZTC2HETWYE4RIR&marketplace=FLIPKART&q=football+kit&store=abc%2Fgxg%2Foj8&srno=s_1_17&otracker=search&otracker1=search&fm=Search&iid=fcf5f53f-de1e-41ed-a884-1c2457a04a96.KITFZTY9ZTC2HETW.SEARCH&ppt=sp&ppn=sp&ssid=w5hh62z0iyb81tkw1653566257578&qH=c0a6b5ca91649849")
             }
-            function myWer() {
+            function myWer(){
                 location.replace("https://www.flipkart.com/adrenex-flipkart-r201-combo-2-badminton-racquet-shuttle-kit/p/itm6cc2fd5c3688a?pid=KITFFUGFNGYEZUFD&lid=LSTKITFFUGFNGYEZUFDUJY0LV&marketplace=FLIPKART&q=badminton+&store=abc%2Fegs&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=ec5662c5-9e8c-4abc-abaa-5e0694fb06b2.KITFFUGFNGYEZUFD.SEARCH&ppt=sp&ppn=sp&ssid=lvpmpz9iuky25wxs1653566306438&qH=5af8feffdfc27903")
             }
-            function myLit() {
+            function myLit(){
                 location.replace("https://www.flipkart.com/mayor-rapid-basketball-size-7/p/itmf82dfsmhnezgm?pid=BALF82C8R42XGY7V&lid=LSTBALF82C8R42XGY7VJMZH58&marketplace=FLIPKART&q=basketball&store=abc%2F6sh%2Fbgw&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=en_%2BEVJGExpC%2FDSywqXX38W8vDNqB8EuVwEo%2BXZWd0PrhQuooXMc%2FMwuLGHyOollpsOhRrtCLX0lhRH6KMzahT2RA%3D%3D&ppt=sp&ppn=sp&ssid=kw4mqt72l1ixem0w1653566378225&qH=d0199f51d2728db6")
             }
-            function myLon() {
+            function myLon(){
                 location.replace("https://www.flipkart.com/nivia-rabona-pro-football-size-5/p/itm4643a849bc354?pid=BALF9CUCMKHYHHHH&lid=LSTBALF9CUCMKHYHHHHCBJHQ6&marketplace=FLIPKART&q=football&store=search.flipkart.com&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=8f0fe295-3078-46cd-82ea-b0d90d048a30.BALF9CUCMKHYHHHH.SEARCH&ppt=sp&ppn=sp&ssid=zux1dw1hptzrzv9c1653566539438&qH=37b4e2d82900d5e9")
             }
-            function myLitt() {
+            function myLitt(){
                 location.replace("")
             }
-            function myLit() {
+            function myLit(){
                 location.replace("https://www.flipkart.com/mayor-rapid-basketball-size-7/p/itmf82dfsmhnezgm?pid=BALF82C8R42XGY7V&lid=LSTBALF82C8R42XGY7VJMZH58&marketplace=FLIPKART&q=basketball&store=abc%2F6sh%2Fbgw&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_6_na_na_na&fm=search-autosuggest&iid=en_%2BEVJGExpC%2FDSywqXX38W8vDNqB8EuVwEo%2BXZWd0PrhQuooXMc%2FMwuLGHyOollpsOhRrtCLX0lhRH6KMzahT2RA%3D%3D&ppt=sp&ppn=sp&ssid=kw4mqt72l1ixem0w1653566378225&qH=d0199f51d2728db6")
             }
             let tree = true;
@@ -1174,43 +1412,44 @@
             }
             /* log in*/
             var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+         //menu 
+         const menu = document.querySelector(".menu");
+    const menuItems = document.querySelectorAll(".menuItem");
+    const hamburger = document.querySelector(".hamburger");
+    const closeIcon = document.querySelector(".closeIcon");
+    const menuIcon = document.querySelector(".menuIcon");
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-            //menu 
-            const menu = document.querySelector(".menu");
-            const menuItems = document.querySelectorAll(".menuItem");
-            const hamburger = document.querySelector(".hamburger");
-            const closeIcon = document.querySelector(".closeIcon");
-            const menuIcon = document.querySelector(".menuIcon");
+    function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            closeIcon.style.display = "none";
+            menuIcon.style.display = "block";
+        } else {
+            menu.classList.add("showMenu");
+            closeIcon.style.display = "block";
+            menuIcon.style.display = "none";
+        }
+    }
 
-            function toggleMenu() {
-                if (menu.classList.contains("showMenu")) {
-                    menu.classList.remove("showMenu");
-                    closeIcon.style.display = "none";
-                    menuIcon.style.display = "block";
-                } else {
-                    menu.classList.add("showMenu");
-                    closeIcon.style.display = "block";
-                    menuIcon.style.display = "none";
-                }
-            }
+    hamburger.addEventListener("click", toggleMenu);
 
-            hamburger.addEventListener("click", toggleMenu);
-
-            menuItems.forEach(
-                function (menuItem) {
-                    menuItem.addEventListener("click", toggleMenu);
-                }
-            )
+    menuItems.forEach(
+        function (menuItem) {
+            menuItem.addEventListener("click", toggleMenu);
+        }
+    )
 
 
 
         </script>
+        
 
 
 
@@ -1402,231 +1641,103 @@
                 © 2022 Copyright:
                 <a class="text-white" href="https://Flipkart/">QUICKART</a>
             </div>
-            <div>
-                <p id="demo1">
-
-                <h6>MOST SEARCHED FOR ON FLIPKART:</h6>Electronics StoreOPPO A16KVivo Y33TOPPO Reno7 5GBathroom
-                Exhaust FanSamsung Window ACOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13
-                MiniFlipkart QuickBooksFlipkart Help CentreBoat 2022 StoreFlipkart Track OrdersFlipkart Manage
-                OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank Credit CardFlipkart Pay
-                Later
-                MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo
-                Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11
-                ProiPhone 11 Pro MaxMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo
-                Mobile
-                CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
-                LAPTOPS:ASUS Zenbook 14X (2022) Space editionASUS Vivobook S14 OLED (2022)ASUS Zenbook 14 OLED
-                (2022)Realme Book Prime Core i5 11th GenMicrosoft Surface Go Pentium 128GBBranded LaptopsApple
-                LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1
-                LaptopsLaptopsDell latest laptops 2022HP latest laptops 2022
-                TVS:Nokia TVPanasonic TVThomson TVVu TVRealme TVMotorola TVOnePlus TVsLG TVTVSony TVSamsung
-                TVAndroid TelevisionIffalcon TvMi TV
-                LARGE APPLIANCES:TelevisionWashing MachinesRefrigeratorsAir ConditionersElectric CookersElectric
-                Jug(Heater) / Travel KettlesInduction CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder
-                JuicerWet GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFan
-                CLOTHING:Men ShirtsKurta PajamaKurtasMen T-ShirtsJeansSareeDressesKids DressesDesigner Salwar
-                SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys
-                ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner
-                SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & TrunksNike WatchesAscot TieCorset Tops
-                TunicsLeather PU SkirtsCorset tops camisolesWomen magenta earringsNo collar jacketsGreen dress
-                materialBlack patiala kurta setMen camel shoes casualBlack pathaniWallets slingKhaki dressesKids
-                formal dressesMauve shirtsWomen henleyIndigo trousersLeopard dressesSleeveless shrugs
-                FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers
-                ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers
-                ShoesAsics Sports ShoesFormal ShoesSchool Shoes
-                GROCERIES:PhonePe Grocery VoucherHand WashSoapCashew NutsSunflower OilEggsToilet CleanerHarpic
-                Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaTea
-                BEST SELLING ON FLIPKART:Panasonic Side by Side RefrigeratorBest Gas GeyserKitchen GeyserNutri
-                BlendersPortable Air CoolerBest Air CoolerBagsHitachi Refrigerator 3 DoorBooksToysCandlesHelmetsWall
-                ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskFastrack WatchesWalletsEarringsGold
-                CoinsRealme Pad MiniHandbagsDIZO Watch SAmazfit GTR 2 (New Version) SmartwatchboAt Wave Neo with
-                1.69 inch, 2.5D Curved Display
-                FURNITURE:Grand Furniture SaleFurnitureSofasBedsDining setsWardrobesMattressesTV
-                UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite
-                SofaWakefit MattressGreen SofaBlack SofaBrown Sofa
-                BGMH:Whey Protein SupplementToysRusOnline GuitarBooks StoreMusical Instrument StoreEnergy DrinksMilk
-                Drink MixesProtein Supplements
-
+            <div>    
+                <p id="demo">
+                   
+<h9>MOST SEARCHED FOR ON FLIPKART:</h9>Electronics StoreOPPO A16KVivo Y33TOPPO Reno7 5GBathroom Exhaust FanSamsung Window ACOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13 MiniFlipkart QuickBooksFlipkart Help CentreBoat 2022 StoreFlipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank Credit CardFlipkart Pay Later
+MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile
+CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
+LAPTOPS:ASUS Zenbook 14X (2022) Space editionASUS Vivobook S14 OLED (2022)ASUS Zenbook 14 OLED (2022)Realme Book Prime Core i5 11th GenMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsLaptopsDell latest laptops 2022HP latest laptops 2022
+TVS:Nokia TVPanasonic TVThomson TVVu TVRealme TVMotorola TVOnePlus TVsLG TVTVSony TVSamsung TVAndroid TelevisionIffalcon TvMi TV
+LARGE APPLIANCES:TelevisionWashing MachinesRefrigeratorsAir ConditionersElectric CookersElectric Jug(Heater) / Travel KettlesInduction CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder JuicerWet GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFan
+CLOTHING:Men ShirtsKurta PajamaKurtasMen T-ShirtsJeansSareeDressesKids DressesDesigner Salwar SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & TrunksNike WatchesAscot TieCorset Tops TunicsLeather PU SkirtsCorset tops camisolesWomen magenta earringsNo collar jacketsGreen dress materialBlack patiala kurta setMen camel shoes casualBlack pathaniWallets slingKhaki dressesKids formal dressesMauve shirtsWomen henleyIndigo trousersLeopard dressesSleeveless shrugs
+FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes
+GROCERIES:PhonePe Grocery VoucherHand WashSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaTea
+BEST SELLING ON FLIPKART:Panasonic Side by Side RefrigeratorBest Gas GeyserKitchen GeyserNutri BlendersPortable Air CoolerBest Air CoolerBagsHitachi Refrigerator 3 DoorBooksToysCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskFastrack WatchesWalletsEarringsGold CoinsRealme Pad MiniHandbagsDIZO Watch SAmazfit GTR 2 (New Version) SmartwatchboAt Wave Neo with 1.69 inch, 2.5D Curved Display
+FURNITURE:Grand Furniture SaleFurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite SofaWakefit MattressGreen SofaBlack SofaBrown Sofa
+BGMH:Whey Protein SupplementToysRusOnline GuitarBooks StoreMusical Instrument StoreEnergy DrinksMilk Drink MixesProtein Supplements
+                </p>
             </div>
-            <div>
-                <p id="demo2">
-                <h6>Quickart:</h6> The One-stop Shopping Destination
+            <div> 
+                 <p id="demo">
+                    <h6>Quickart:</h6> The One-stop Shopping Destination
 
-                E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to
-                another in search of the latest phone when you can find it on the Internet in a single click? Not
-                only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like
-                laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes,
-                clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and
-                wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder
-                juicers and other time-saving kitchen and small appliances; from home furnishings like cushion
-                covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name
-                it, and you can stay assured about finding them all here. For those of you with erratic working
-                hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning.
-                This e-commerce never shuts down.
-
-                What's more, with our year-round shopping festivals and events, our prices are irresistible. We're
-                sure you'll find yourself picking up more than what you had in mind. If you are wondering why you
-                should shop from Flipkart when there are multiple options available to you, well, the below will
-                answer your question.
-
-                <h6>Quickart Plus</h6>
-
-                A world of limitless possibilities awaits you - Quickart Plus was kickstarted as a loyalty reward
-                programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to
-                be a part of this service. For every 100 rupees spent on Quickart order, Plus members earns 4
-                supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and
-                shopping festivals, exchange offers and priority customer service are the top benefits to a Quickart
-                Plus member. In short, earn more when you shop more!
-
-                What's more, you can even use the supercoins for a number of exciting services, like:
-                An annual Zomato Gold membership
-                An annual Hotstar Premium membership
-                6 months Gaana plus subscription
-                Rupees 550 instant discount on flights on ixigo
-                Check out https://www.Quickart.com/plus/all-offers for the entire list. Terms and conditions apply.
-
-                <h6>No Cost EMI</h6>
-
-                In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop
-                with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops,
-                large and small appliances, furniture, electronics and watches, you can now shop without burning a
-                hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a
-                no cost EMI. Take a look ASAP! Terms and conditions apply.
-
-                <h6>EMI on Debit Cards</h6>
-
-                Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14
-                crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online
-                shopping accessible to everyone, Quickart introduces EMI on Debit Cards, empowering you to shop
-                confidently with us without having to worry about pauses in monthly cash flow. At present, we have
-                partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More
-                power to all our shoppers! Terms and conditions apply.
-
-                <h6>Mobile Exchange Offers</h6>
-
-                Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a
-                new one after the Quickart experts calculate the value of your old phone, provided it is in a
-                working condition without damage to the screen. If a phone is applicable for an exchange offer, you
-                will see the 'Buy with Exchange' option on the product description of the phone. So, be smart,
-                always opt for an exchange wherever possible. Terms and conditions apply.
-
-                What Can You Buy From Flipkart?
-
-                <h6>Mobile Phones</h6>
-
-                From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
-                Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
-                beautification apps, high-tech selfie cameras or just large internal space, we take care of all the
-                essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and
-                Honor to name a few. Rest assured, you're buying from only the most reliable names in the market.
-                What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to
-                run around service centres. This plan entails you to a number of post-purchase solutions, starting
-                at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches,
-                and replacements - the Quickart Complete Mobile Protection covers a comprehensive range of
-                post-purchase problems, with door-to-door services.
-
-                <h6>Electronic Devices and Accessories</h6>
-
-                When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating
-                systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized
-                results in a flash. All you students out there, confused about what laptop to get? Our Back To
-                College Store segregates laptops purpose wise (gaming, browsing and research, project work,
-                entertainment, design, multitasking) with recommendations from top brands and industry experts,
-                facilitating a shopping experience that is quicker and simpler.
-
-                Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever
-                reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for
-                adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon,
-                Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers,
-                you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable
-                point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure
-                junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon,
-                GoPro, Sony, and Fujifilm are some big names you'll find in our store.
-
-                Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range
-                of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
-
-                How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile
-                accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks
-                can prove to be ideal travel companions for you and your phone; never again worry about running out
-                of charge or memory on your next vacation.
-
-                <h6>Large Appliances</h6>
-
-                Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover
-                everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures
-                zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation
-                as per your convenience and a double warranty (Official Brand Warranty along with an extended
-                Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from
-                market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony,
-                Daikin, and Hitachi among many others.
-
-                <h6>Small Home Appliances</h6>
-
-                Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs,
-                microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving
-                appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances
-                at home.
-
-                <h6>Lifestyle</h6>
-
-                Quickart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and
-                everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter
-                clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up,
-                grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like
-                Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of
-                other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants,
-                traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is
-                up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for
-                carefully curated designs that are the talk of the town. Get ready to be spoiled for
-                choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your
-                back each time.
-
-                <h6>Home and Furniture</h6>
-
-                Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets,
-                dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds
-                of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture
-                will stand the test of time? These are questions you must ask before you choose a store. Well, our
-                Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the
-                modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for
-                up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you
-                receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal,
-                Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
-
-                You may have your furniture all set up, but they could end up looking flat and incomplete without
-                complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps -
-                find everything that turns a house to an inviting home under one roof at Flipkart.
-
-                <h6>Kids</h6>
-
-                Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an
-                expecting mother or a new mother, you will find everything you need to set sail on a smooth
-                parenting journey with the help of our baby care collection. When it comes to safety, hygiene and
-                comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson &
-                Johnson: we host only the most-trusted names in the business for your baby.
-
-                <h6>Books, Sports and Games</h6>
-
-                Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction
-                books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming
-                consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to
-                get moving.
-
-                <h6>Grocery/Supermart</h6>
-
-                Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday
-                essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast
-                essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to
-                present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only -
-                our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and
-                conditions apply.
-
+                    E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. 
+                    
+                    What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. 
+                    
+                    <h6>Quickart Plus</h6>
+                    
+                    A world of limitless possibilities awaits you - Quickart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Quickart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Quickart Plus member. In short, earn more when you shop more! 
+                    
+                    What's more, you can even use the  supercoins for a number of exciting services, like:
+                    An annual Zomato Gold membership
+                    An annual Hotstar Premium membership
+                    6 months Gaana plus subscription
+                    Rupees 550 instant discount on flights on ixigo
+                    Check out https://www.Quickart.com/plus/all-offers for the entire list. Terms and conditions apply.
+                    
+                    <h6>No Cost EMI</h6>
+                    
+                    In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.
+                    
+                   <h6> <b>EMI on Debit Cards</b></h6>
+                    
+                    Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Quickart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. 
+                    
+                    <h6>Mobile Exchange Offers</h6>
+                    
+                    Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Quickart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. 
+                    
+                    What Can You Buy From Flipkart?
+                    
+                    <h6>Mobile Phones</h6>
+                    
+                    From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Quickart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services. 
+                    
+                    <h6>Electronic Devices and Accessories</h6>
+                    
+                    When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+                    
+                    Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. 
+                    
+                    Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+                    
+                    How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.
+                    
+                    <h6>Large Appliances</h6>
+                    
+                    Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others. 
+                    
+                    <h6>Small Home Appliances</h6>
+                    
+                    Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.
+                    
+                    <h6>Lifestyle</h6>
+                    
+                   Quickart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.
+                    
+                   <h6>Home and Furniture</h6>
+                    
+                    Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. 
+                    
+                    You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart. 
+                    
+                    <h6>Baby and Kids</h6>
+                    
+                    Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.
+                    
+                    <h6>Books, Sports and Games</h6>
+                    
+                    Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving. 
+                    
+                    <h6>Grocery/Supermart</h6>
+                    
+                    Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+                 
             </div>
 
-        </footer>
-    </section>
-    <!--
+        </footer><!--
         <h6>Hello world</h6>
         <p> Change everything</p>
         <button type="button" onclick="myBest()">Specification</button>-->

@@ -19,6 +19,7 @@ import { UserValuesComponent } from './admin/user-values/user-values.component';
 import { UsergroupsComponent } from './admin/user-groups/usergroups.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TodosComponent } from './MyComponent/todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     UserComponent,
     UserValuesComponent,
-    UsergroupsComponent
+    UsergroupsComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,

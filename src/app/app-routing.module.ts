@@ -11,6 +11,7 @@ const routes: Routes = [
   {path : 'user', component: UserComponent},
   {path : 'usergroup', component: UsergroupsComponent},
   {path : 'ball', component: BallComponent},
+  
 ];
 
 @NgModule({
